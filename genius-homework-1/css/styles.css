@@ -54,8 +54,13 @@ ul {
     list-style-type: none;
 }
 
+address {
+    font-style: normal;
+}
+
 .link {
     color: var(--color-primary-dark-blue);
+    font-size: 18px;
 }
 
 .link:hover {
@@ -100,6 +105,7 @@ ul {
     font-family: "Play", sans-serif;
     font-size: 64px;
     font-weight: 700;
+    text-align: center;
 }
 
 .title-section span {
@@ -123,7 +129,7 @@ ul {
     margin: 0 auto;
 }
 .why-we-blocks div {
-    background-color: var(--color-primary-dark-grey);
+    background-color: var(--color-primary-white);
     border-radius: 32px;
     font-size: 18px;
     line-height: 1.33;
@@ -138,4 +144,20 @@ ul {
     width: 252px;
     height: 133px;
     text-align: center;
+    box-shadow: 0px 4px 4px 0px rgba(168, 198, 245, 0.38);
+}
+
+.address-copyright {
+    font-size: 13px;
+    color: var(--color-secondary-grey);
+}
+
+.link-footer {
+    color: var(--color-primary-dark-blue);
+    font-size: 16px;
+}
+
+.link-footer:hover {
+    color: var(--color-primary-blue);
+    font-weight: 700;
 }
