@@ -253,39 +253,145 @@ p {
     padding-top: 176px;
 
 }
+
+.why-we-container {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    padding: 0 90px;
+    align-items: center;
+}
+
+.why-we-title {
+    width: 100%;
+    max-width: 450px;
+}
+
 .why-we-blocks {
     display: flex;
-    align-items: flex-start;
-    gap: 56px;
-    width: 1060px;
-    margin: 0 auto;
-}
-.why-we-blocks div {
-    background-color: var(--color-primary-white);
-    border-radius: 32px;
-    font-size: 18px;
-    line-height: 1.33;
-
-    display: flex;
+    gap: 24px 56px;
     flex-wrap: wrap;
-    height: 180px;
-    padding: 24px 32px;
     justify-content: center;
-    align-items: center;
+}
 
-    width: 252px;
-    height: 133px;
+.why-we-block {
     text-align: center;
+    padding: 24px 32px;
+    border-radius: 32px;
+    background-color: var(--color-primary-white);
     box-shadow: 0px 4px 4px 0px rgba(168, 198, 245, 0.38);
+    flex-basis: calc((100% - 112px) / 3);
+}
+
+.why-we-text {
+    font-size: 18px;
+    color: var(--color-secondary-black);
+    line-height: 1.33;
+    margin-top: 8px;
 }
 
 /* Procedures section*/
+.procedures-container {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.procedures-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 0 90px;
+}
+
+.procedures-gradient {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background: linear-gradient(180deg, rgba(1, 28, 68, 0.00) 48.53%, rgba(1, 28, 68, 0.73) 84.61%, #011C44 101.39%);
+    width: 100%;
+    height: 100%;
+    border-radius: 4px 120px;;
+}
+
+.procedures-card {
+    flex-basis: calc((100% - 32px) / 3);
+    height: 456px;
+    border-radius: 4px 120px;
+}
+
+.procedures-text {
+    text-align: center;
+    line-height: 1.18;
+    color: var(--color-primary-white);
+    max-width: 152px;
+    width: 100%;
+    margin-bottom: 32px;
+    margin-right: 22%;
+}
+
+.procedures-bg-mask {
+    background: url(../images/mask.jpg) no-repeat center;
+}
+
+.procedures-bg-injections {
+    background: url(../images/injections.jpg) no-repeat center;
+}
+
+.procedures-bg-cleaning {
+    background: url(../images/cleaning.jpg) no-repeat center;
+}
+
 /* Contacts section */
+.contacts-section {
+    padding-bottom: 94px;
+}
+
+.contacts-title {
+    margin-bottom: 48px;
+}
+
+.contacts-container {
+    display: flex;
+    gap: 32px;
+    padding: 0 90px;
+}
+
+.contact-map {
+    border-radius: 32px;
+}
 
 /* Footer */
-.footer {
-    padding-top: 48px;
+.footer-container {
+    display: flex;
+    gap: 20px;
 }
+
+.footer-nav,
+.footer-address {
+    display: flex;
+    flex-basis: 50%;
+    gap: 20px;
+}
+
+.footer-logo {
+    flex-grow: 1;
+}
+
+.footer-menu,
+.footer-list,
+.address-info {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex-grow: 1;
+}
+
+.footer {
+    padding: 56px 0;
+    background-color: var(--color-primary-dark-blue);
+}
+
 .address-copyright {
     font-size: 13px;
     color: var(--color-secondary-grey);
@@ -293,7 +399,7 @@ p {
 }
 
 .link-footer {
-    color: var(--color-primary-dark-blue);
+    color: var(--color-primary-white);
     font-size: 16px;
 }
 
