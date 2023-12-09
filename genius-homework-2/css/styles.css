@@ -146,6 +146,10 @@ p {
     gap: 32px;
 }
 
+.header-icon {
+    fill: var(--color-primary-dark-blue);
+}
+
 /* Main section */
 .main-container {
     display: flex;
@@ -168,7 +172,7 @@ p {
 }
 
 .main-section {
-    padding-top: 124px;
+    padding: 124px 0;
 }
 
 .main-section p {
@@ -191,10 +195,6 @@ p {
 }
 
 /* About section */
-.about-section {
-    padding-top: 166px;
-}
-
 .about-text p span {
     font-weight: 600;
     text-transform: capitalize;
@@ -288,6 +288,10 @@ p {
     color: var(--color-secondary-black);
     line-height: 1.33;
     margin-top: 8px;
+}
+
+.why-we-icon {
+    fill: var(--color-primary-blue);
 }
 
 /* Procedures section*/
@@ -405,4 +409,13 @@ p {
 
 .link-footer:hover {
     color: var(--color-primary-blue);
+}
+
+.footer-social {
+    display: flex;
+    gap: 24px;
+}
+
+.footer-icon {
+    fill: var(--color-primary-white);
 }
