@@ -294,18 +294,55 @@ p {
     fill: var(--color-primary-blue);
 }
 
+/* Carousel */
+.carousel-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid var(--color-primary-dark-blue);
+    fill: var(--color-primary-dark-blue);
+    
+}
+
+.carousel-button:hover {
+    fill: var(--color-primary-white);
+    border: 1px solid var(--color-primary-white);
+    background-color: #2B7FFF;
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
+
 /* Procedures section*/
 .procedures-container {
     display: flex;
-    flex-direction: column;
-    gap: 48px;
+    gap: 32px;
+    justify-content: center;
+    align-items: center;
+}
+
+.procedures-title {
+    margin-bottom: 48px;
 }
 
 .procedures-cards {
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
-    padding: 0 90px;
+    flex-grow: 1;
+}
+
+.procedures-card {
+    flex-basis: calc((100% - 32px) / 3);
+    height: 456px;
+    border-radius: 4px 120px;
 }
 
 .procedures-gradient {
@@ -318,32 +355,35 @@ p {
     border-radius: 4px 120px;;
 }
 
-.procedures-card {
-    flex-basis: calc((100% - 32px) / 3);
-    height: 456px;
-    border-radius: 4px 120px;
-}
-
 .procedures-text {
     text-align: center;
     line-height: 1.18;
     color: var(--color-primary-white);
     max-width: 152px;
     width: 100%;
-    margin-bottom: 32px;
-    margin-right: 22%;
+    box-sizing: content-box;
+    padding: 0 22% 32px 0;
 }
 
 .procedures-bg-mask {
-    background: url(../images/mask.jpg) no-repeat center;
+    background: url(../images/mask.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .procedures-bg-injections {
-    background: url(../images/injections.jpg) no-repeat center;
+    background: url(../images/injections.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .procedures-bg-cleaning {
-    background: url(../images/cleaning.jpg) no-repeat center;
+    background: url(../images/cleaning.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 /* Contacts section */
