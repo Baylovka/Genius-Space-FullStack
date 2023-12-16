@@ -75,6 +75,16 @@ p {
     margin: 0;
 }
 
+/* Other */
+.visually-hidden {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
 /* Links */
 .link {
     color: var(--color-primary-dark-blue);
@@ -539,6 +549,13 @@ p {
     border-radius: 32px;
 }
 
+.contact-form {
+    flex-grow: 1;
+    border-radius: 32px;
+    background-color: var(--color-primary-dark-blue);
+    padding: 48px 56px; 
+}
+
 /* Footer */
 .footer-container {
     display: flex;
@@ -605,4 +622,128 @@ p {
     height: 152px;
     right: -25px;
     bottom: 0;
+}
+
+/* Modal window */
+.backdrop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 8px 0;
+    background-color: rgb(0, 0, 0, 0.5);
+    transition: opacity .2s, visibility .2s;
+}
+
+.backdrop.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal {
+    position: relative;
+    max-width: 724px;
+    max-height: 680px;
+    width: 100%;
+    height: 100%;
+    border-radius: 48px;
+    background-color: var(--color-primary-dark-blue);
+    padding: 32px 144px; 
+    overflow-y: auto;
+}
+
+.modal-btn-close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 42px;
+    right: 42px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    fill: none;
+    stroke: var(--color-primary-white);
+}
+
+.modal-title {
+    color: var(--color-primary-white);
+    font-family: "Play", sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    max-width: 300px;
+    text-align: center;
+    margin: 0 auto 40px;
+}
+
+.modal-text {
+    color: var(--color-primary-white);
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+    max-width: 280px;
+    margin: 0 auto 32px;
+}
+
+.modal-text span {
+    color: var(--color-primary-blue);
+}
+
+/* Modal Form */
+.modal-form {
+    max-width: 310px;
+    margin: 0 auto;
+}
+
+.form-field {
+    margin-bottom: 16px;
+}
+
+.form-input {
+    padding: 18px 32px;
+    border-radius: 32px;
+    border: 2px solid var(--color-secondary-grey);
+    background-color: transparent;
+    font-size: 13px;
+    color: var(--color-primary-white);   
+    width: 100%; 
+}
+
+.form-input::placeholder {
+    color: var(--color-primary-white);
+}
+
+.form-input:focus {
+    outline: none;
+    background-color: var(--color-secondary-grey);
+}
+
+.form-button {
+    display: block;
+    margin: 0 auto 8px;
+}
+
+.form-button:hover {
+    color: var(--color-primary-blue);
+}
+
+.form-terms {
+    color: var(--color-secondary-grey);
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: center;
+    max-width: 205px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.form-terms-link {
+    text-decoration: underline;
+    color: var(--color-secondary-grey);
 }
