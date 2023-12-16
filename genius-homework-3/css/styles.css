@@ -79,6 +79,7 @@ p {
 .link {
     color: var(--color-primary-dark-blue);
     font-size: 18px;
+    transition: color .2s;
 }
 
 .link:hover {
@@ -97,6 +98,7 @@ p {
     font-family: "Roboto", sans-serif;
     font-weight: 600;
     font-size: 18px;
+    transition: color .2s, background-color .2s;
 }
 
 .button:hover {
@@ -261,6 +263,8 @@ p {
 .photo-after::before {
     content: "";
     position: absolute;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 .photo-before {
@@ -275,6 +279,8 @@ p {
     height: 35px;
     top: 44px;
     right: 0;
+    animation-name: animation-star-medium;
+    animation-duration: 1.8s;
 }
 
 .photo-before::after {
@@ -283,6 +289,8 @@ p {
     height: 16px;
     bottom: 40px;
     right: 30px;
+    animation-name: animation-star-small;
+    animation-duration: 1.5s;
 }
 
 .photo-after {
@@ -297,6 +305,59 @@ p {
     height: 56px;
     top: 0;
     left: 130px;
+    animation-name: animation-star-large;
+    animation-duration: 2.5s;
+}
+
+@keyframes animation-star-small {
+    0% {
+        transform: rotate(0);
+        scale: 1;
+    }
+
+    50% {
+        scale: 1.2;
+        filter: drop-shadow(2px 2px 4px var(--color-secondary-black));
+    }
+
+    100% {
+        transform: rotate(360deg);
+        scale: 1;
+    }
+}
+
+@keyframes animation-star-medium {
+    0% {
+        transform: rotate(360deg);
+        scale: 1;
+    }
+
+    50% {
+        scale: 1.08;
+        filter: drop-shadow(1px 1px 8px var(--color-primary-dark-grey));
+    }
+
+    100% {
+        transform: rotate(0);
+        scale: 1;
+    }
+}
+
+@keyframes animation-star-large {
+    0% {
+        transform: rotate(0);
+        scale: 1;
+    }
+
+    50% {
+        filter: drop-shadow(1px 1px 4px var(--color-primary-blue));
+        scale: 1.05;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        scale: 1;
+    }
 }
 
 /* Why-we section */
@@ -407,6 +468,15 @@ p {
     flex-basis: calc((100% - 32px) / 3);
     height: 456px;
     border-radius: 4px 120px;
+    transition: scale .2s, box-shadow .2s;
+}
+
+.procedures-card:hover {
+    scale: 1.05;
+    box-shadow:
+    1px 1px 2px black,
+    0 0 1em var(--color-primary-dark-blue),
+    0 0 0.2em var(--color-primary-blue);
 }
 
 .procedures-gradient {
@@ -511,6 +581,7 @@ p {
 .link-footer {
     color: var(--color-primary-white);
     font-size: 16px;
+    transition: color .2s;
 }
 
 .link-footer:hover {
