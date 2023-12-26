@@ -1,0 +1,145 @@
+.about-text p span {
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.about-container {
+    display: flex;
+    gap: 28px;
+}
+
+.about-title-and-text {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 710px;
+    /* flex-shrink: 0; */
+
+}
+
+.about-title {
+    text-align: start;
+    max-width: 530px;
+    padding-top: 40px;
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    line-height: 1.72;
+}
+
+.about-photo {
+    display: flex;
+    flex-direction: column;
+    /* position: relative; */
+    gap: 40px;
+    flex-grow: 1;
+}
+
+.photo {
+    border-radius: 50%;
+}
+
+.photo-before::before,
+.photo-before::after,
+.photo-after::before {
+    content: "";
+    position: absolute;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.photo-before {
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.photo-before::before {
+    background-image: url(../images/decor-star-medium.png);
+    width: 35px;
+    height: 35px;
+    top: 44px;
+    right: 0;
+    animation-name: animation-star-medium;
+    animation-duration: 1.8s;
+}
+
+.photo-before::after {
+    background-image: url(../images/decor-star-small.png);
+    width: 15px;
+    height: 16px;
+    bottom: 40px;
+    right: 30px;
+    animation-name: animation-star-small;
+    animation-duration: 1.5s;
+}
+
+.photo-after {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.photo-after::before {
+    background-image: url(../images/decor-star-large.png);
+    width: 56px;
+    height: 56px;
+    top: 0;
+    left: 130px;
+    animation-name: animation-star-large;
+    animation-duration: 2.5s;
+}
+
+@keyframes animation-star-small {
+    0% {
+        transform: rotate(0);
+        scale: 1;
+    }
+
+    50% {
+        scale: 1.2;
+        filter: drop-shadow(2px 2px 4px var(--color-secondary-black));
+    }
+
+    100% {
+        transform: rotate(360deg);
+        scale: 1;
+    }
+}
+
+@keyframes animation-star-medium {
+    0% {
+        transform: rotate(360deg);
+        scale: 1;
+    }
+
+    50% {
+        scale: 1.08;
+        filter: drop-shadow(1px 1px 8px var(--color-primary-dark-grey));
+    }
+
+    100% {
+        transform: rotate(0);
+        scale: 1;
+    }
+}
+
+@keyframes animation-star-large {
+    0% {
+        transform: rotate(0);
+        scale: 1;
+    }
+
+    50% {
+        filter: drop-shadow(1px 1px 4px var(--color-primary-blue));
+        scale: 1.05;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        scale: 1;
+    }
+}

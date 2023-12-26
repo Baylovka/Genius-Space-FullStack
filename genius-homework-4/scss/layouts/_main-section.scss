@@ -1,0 +1,49 @@
+.main-container {
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    max-width: 530px;
+}
+
+.main-logo {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.main-call {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 228px;
+}
+
+.main-section {
+    padding: 124px 0;
+    background: linear-gradient(89deg, #FFF 30.62%, rgba(255, 255, 255, 0.85) 41.31%, rgba(255, 255, 255, 0.19) 58.65%, rgba(255, 255, 255, 0.00) 72.78%),
+    url(../images/main-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+}
+
+.main-section p {
+    font-size: 18px;
+}
+
+.main-section .accent {
+    color: var(--color-primary-dark-grey);
+    font-size: 12px;
+    line-height: 1.5;
+    padding-left: 24px;
+}
+
+.main-title {
+    color: var(--color-primary-blue);
+    font-family: "Play", sans-serif;
+    font-size: 140px;
+    font-weight: 700;
+    line-height: 0.81;
+    margin-bottom: 0;
+}
