@@ -1,66 +1,66 @@
-.footer-container {
-    display: flex;
-    gap: 20px;
-}
-
-.footer-nav,
-.footer-address {
-    display: flex;
-    flex-basis: 50%;
-    gap: 20px;
-}
-
-.footer-logo {
-    flex-grow: 1;
-}
-
-.footer-menu,
-.footer-list,
-.address-info {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    flex-grow: 1;
-}
-
 .footer {
     position: relative;
     padding: 56px 0;
     background-color: var(--color-primary-dark-blue);
     overflow: hidden;
-}
 
-.address-copyright {
-    font-size: 13px;
-    color: var(--color-secondary-grey);
-    margin: 0;
-}
+    &::after {
+        content: "";
+        background-image: url(../images/decor-footer.webp);
+        position: absolute;
+        width: 272px;
+        height: 152px;
+        right: -25px;
+        bottom: 0;
+    }
 
-.link-footer {
-    color: var(--color-primary-white);
-    font-size: 16px;
-    transition: color .2s;
-}
+    &__container {
+        display: flex;
+        gap: 20px;
+    }
+    
+    &__nav,
+    &__address {
+        display: flex;
+        flex-basis: 50%;
+        gap: 20px;
+    }
+    
+    &__logo {
+        flex-grow: 1;
+    }
+    
+    &__menu,
+    &__list,
+    &__address-info {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        flex-grow: 1;
+    }
+    
+    &__address-copyright {
+        font-size: 13px;
+        color: var(--color-secondary-grey);
+        margin: 0;
+    }
+    
+    &__link {
+        color: var(--color-primary-white);
+        font-size: 16px;
+        transition: color .2s;
 
-.link-footer:hover {
-    color: var(--color-primary-blue);
-}
-
-.footer-social {
-    display: flex;
-    gap: 24px;
-}
-
-.footer-icon {
-    fill: var(--color-primary-white);
-}
-
-.footer::after {
-    content: "";
-    background-image: url(../images/decor-footer.webp);
-    position: absolute;
-    width: 272px;
-    height: 152px;
-    right: -25px;
-    bottom: 0;
+        &:hover {
+            color: var(--color-primary-blue);
+        }
+    }
+    
+    &__social {
+        display: flex;
+        gap: 24px;
+    }
+    
+    &__icon {
+        fill: var(--color-primary-white);
+    }
 }

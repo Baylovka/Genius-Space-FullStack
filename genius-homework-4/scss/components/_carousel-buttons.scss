@@ -10,11 +10,10 @@
     background-color: transparent;
     border: 1px solid var(--color-primary-dark-blue);
     fill: var(--color-primary-dark-blue);
-    
-}
 
-.carousel-button:hover {
-    fill: var(--color-primary-white);
-    border: 1px solid var(--color-primary-white);
-    background-color: #2B7FFF;
+    &:hover {
+        fill: var(--color-primary-white);
+        border: 1px solid var(--color-primary-white);
+        background-color: #2B7FFF;
+    }
 }

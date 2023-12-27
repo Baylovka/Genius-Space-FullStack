@@ -1,17 +1,19 @@
-.procedures-container {
-    display: flex;
-    gap: 32px;
-    justify-content: center;
-    align-items: center;
-}
-
-.procedures-title {
-    margin-bottom: 48px;
-}
-
-.procedures-cards {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
-    flex-grow: 1;
+.procedures-section {
+    &__container {
+        display: flex;
+        gap: 32px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    &__title {
+        margin-bottom: 48px;
+    }
+    
+    &__cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        flex-grow: 1;
+    }
 }

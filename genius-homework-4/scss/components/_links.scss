@@ -2,8 +2,8 @@
     color: var(--color-primary-dark-blue);
     font-size: 18px;
     transition: color .2s;
-}
 
-.link:hover {
-    color: var(--color-primary-blue);
+    &:hover {
+        color: var(--color-primary-blue);
+    }
 }

@@ -1,96 +1,90 @@
-.about-text p span {
-    font-weight: 600;
-    text-transform: capitalize;
-}
+.about-section {
+    &__container {
+        display: flex;
+        gap: 28px;
+    }
+    
+    &__context {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        max-width: 710px;
+    }
+    
+    &__title {
+        text-align: start;
+        max-width: 530px;
+        padding-top: 40px;
+    }
+    
+    &__text {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        line-height: 1.72;
+    }
+    
+    &__photos {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        flex-grow: 1;
+    }
 
-.about-container {
-    display: flex;
-    gap: 28px;
-}
+    &__photo-before {
+        display: flex;
+        justify-content: flex-start;
+        position: relative;
 
-.about-title-and-text {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    max-width: 710px;
-    /* flex-shrink: 0; */
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
 
-}
+        &::before {
+            background-image: url(../images/decor-star-medium.png);
+            width: 35px;
+            height: 35px;
+            top: 44px;
+            right: 0;
+            animation-name: animation-star-medium;
+            animation-duration: 1.8s;
+        }
 
-.about-title {
-    text-align: start;
-    max-width: 530px;
-    padding-top: 40px;
-}
+        &::after {
+            background-image: url(../images/decor-star-small.png);
+            width: 15px;
+            height: 16px;
+            bottom: 40px;
+            right: 30px;
+            animation-name: animation-star-small;
+            animation-duration: 1.5s;
+        }
+    }
 
-.about-text {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    line-height: 1.72;
-}
+    &__photo-after {
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
 
-.about-photo {
-    display: flex;
-    flex-direction: column;
-    /* position: relative; */
-    gap: 40px;
-    flex-grow: 1;
-}
+        &::before {
+            content: "";
+            position: absolute;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
 
-.photo {
-    border-radius: 50%;
-}
-
-.photo-before::before,
-.photo-before::after,
-.photo-after::before {
-    content: "";
-    position: absolute;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}
-
-.photo-before {
-    display: flex;
-    justify-content: flex-start;
-    position: relative;
-}
-
-.photo-before::before {
-    background-image: url(../images/decor-star-medium.png);
-    width: 35px;
-    height: 35px;
-    top: 44px;
-    right: 0;
-    animation-name: animation-star-medium;
-    animation-duration: 1.8s;
-}
-
-.photo-before::after {
-    background-image: url(../images/decor-star-small.png);
-    width: 15px;
-    height: 16px;
-    bottom: 40px;
-    right: 30px;
-    animation-name: animation-star-small;
-    animation-duration: 1.5s;
-}
-
-.photo-after {
-    display: flex;
-    justify-content: flex-end;
-    position: relative;
-}
-
-.photo-after::before {
-    background-image: url(../images/decor-star-large.png);
-    width: 56px;
-    height: 56px;
-    top: 0;
-    left: 130px;
-    animation-name: animation-star-large;
-    animation-duration: 2.5s;
+            background-image: url(../images/decor-star-large.png);
+            width: 56px;
+            height: 56px;
+            top: 0;
+            left: 130px;
+            animation-name: animation-star-large;
+            animation-duration: 2.5s;
+        }
+    }
 }
 
 @keyframes animation-star-small {
