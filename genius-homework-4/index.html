@@ -40,8 +40,15 @@
             </svg>
           </a>
         </div>
+
+        <button type="button" class="header__burger menu-btn-open">
+          <svg width="24px" height="24px">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+
+
       </div>
-    </div>
   </header>
   <main>
     <section class="main-section">
@@ -52,13 +59,13 @@
             <h1 lang="en" class="main-section__title">Beauty Zone</h1>
           </div>
           <div class="main-section__call">
-            <button type="button" class="modal-btn-open button">Замовити дзвінок</button>
-            <p class="accent">Запишись та отримай безкоштовну консультацію нашого косметолога</p>
+            <button type="button" class="main-section__btn-open modal-btn-open button">Замовити дзвінок</button>
+            <p class="main-section__accent">Запишись та отримай безкоштовну консультацію нашого косметолога</p>
           </div>
         </div>
       </div>
     </section>
-    <section class="about-section" id="about-section">
+    <!-- <section class="about-section" id="about-section">
       <div class="container">
         <div class="about-section__container">
           <div class="about-section__context">
@@ -192,9 +199,9 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
   </main>
-  <footer class="footer">
+  <!-- <footer class="footer">
     <div class="container">
       <div class="footer__container">
         <nav class="footer__nav">
@@ -246,7 +253,42 @@
         </address>
       </div>
     </div>
-  </footer>
+  </footer> -->
+  <div class="mobile-menu">
+    <div class="mobile-menu__container">
+      <button class="mobile-menu__button menu-btn-close">
+        <svg width="24px" height="24px">
+          <use href="images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <a href="./index.html" class="mobile-menu__logo">
+        <img src="./images/logo.svg" alt="logo">
+      </a>
+      <ul class="mobile-menu__list">
+        <li><a class="link" href="#about-section">Про нас</a></li>
+        <li><a class="link" href="#why-we-section">Чому ми</a></li>
+        <li><a class="link" href="#procedures-section">Наші процедури</a></li>
+        <li><a class="link" href="#contacts-section">Контакти</a></li>
+      </ul>
+      <div class="mobile-menu__social">
+        <a href="#" class="mobile-menu__icon">
+          <svg height="32px" width="32px">
+            <use href="./images/icons.svg#icon-phone"></use>
+          </svg>
+        </a>
+        <a href="#" class="mobile-menu__icon">
+          <svg height="32px" width="32px">
+            <use href="./images/icons.svg#icon-facebook"></use>
+          </svg>
+        </a>
+        <a href="#" class="mobile-menu__icon">
+          <svg height="32px" width="32px">
+            <use href="./images/icons.svg#icon-instagram"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
   <div class="backdrop is-hidden">
     <div class="modal">
       <button class="modal__btn-close modal-btn-close">
@@ -284,6 +326,7 @@
     </div>
   </div>
   <script src="./js/modal.js"></script>
+  <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
