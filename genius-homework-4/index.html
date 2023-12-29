@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Beauty Zone</title>
   <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+  
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
 </head>
 
 <body>
@@ -65,11 +68,12 @@
         </div>
       </div>
     </section>
-    <!-- <section class="about-section" id="about-section">
+    <section class="about-section" id="about-section">
       <div class="container">
         <div class="about-section__container">
           <div class="about-section__context">
-            <h2 class="about-section__title section__title">Перевтілюйтесь в <span class="brand">Beauty Zone!</span></h2>
+            <h2 class="about-section__title section__title">Перевтілюйтесь в <span class="brand">Beauty Zone!</span>
+            </h2>
             <div class="about-section__text">
               <p>Наша косметологічна клініка пропонує вам професійні послуги з догляду за шкірою обличчя
                 та
@@ -87,10 +91,10 @@
           </div>
           <div class="about-section__photos">
             <div class="about-section__photo-before">
-              <img class="rounded" src="./images/women-before.jpg" alt="Вигляд жінки до">
+              <img class="rounded about-section__photo" src="./images/women-before.jpg" alt="Вигляд жінки до">
             </div>
             <div class="about-section__photo-after">
-              <img class="rounded" src="./images/women-after.jpg" alt="Вигляд жінки після">
+              <img class="rounded about-section__photo" src="./images/women-after.jpg" alt="Вигляд жінки після">
             </div>
           </div>
         </div>
@@ -130,29 +134,34 @@
       <div class="container">
         <h2 class="section__title procedures-section__title">Наші <span class="brand">процедури</span></h2>
         <div class="procedures-section__container">
-          <button type="button" class="carousel-button">
+          <button type="button" class="carousel-button prev">
             <svg width="16px" height="16px">
               <use href="./images/icons.svg#icon-arrow"></use>
             </svg>
           </button>
-          <div class="procedures-section__cards">
-            <div class="procedures-card procedures-card--bg-mask">
-              <div class="procedures-card__gradient">
-                <p class="procedures-card__text">Маски для обличчя</p>
+          <div class="swiper">
+            <div class="swiper-wrapper procedures-section__cards">
+              <div class="swiper-slide procedures-card procedures-card--bg-mask">
+                <div class="procedures-card__gradient">
+                  <p class="procedures-card__text">Маски для обличчя</p>
+                </div>
+              </div>
+              <div class="swiper-slide procedures-card procedures-card--bg-injections">
+                <div class="procedures-card__gradient">
+                  <p class="procedures-card__text">Ін'єкції для обличчя</p>
+                </div>
+              </div>
+              <div class="swiper-slide procedures-card procedures-card--bg-cleaning">
+                <div class="procedures-card__gradient">
+                  <p class="procedures-card__text">Очищення обличчя</p>
+                </div>
               </div>
             </div>
-            <div class="procedures-card procedures-card--bg-injections">
-              <div class="procedures-card__gradient">
-                <p class="procedures-card__text">Ін'єкції для обличчя</p>
-              </div>
-            </div>
-            <div class="procedures-card procedures-card--bg-cleaning">
-              <div class="procedures-card__gradient">
-                <p class="procedures-card__text">Очищення обличчя</p>
-              </div>
+            <div class="pagination">
+              <span class="pagination__bullet"></span>
             </div>
           </div>
-          <button type="button" class="carousel-button rotate">
+          <button type="button" class="carousel-button next rotate">
             <svg width="16px" height="16px">
               <use href="./images/icons.svg#icon-arrow"></use>
             </svg>
@@ -160,7 +169,7 @@
         </div>
       </div>
     </section>
-    <section class="contacts-section section" id="contacts-section">
+    <!-- <section class="contacts-section section" id="contacts-section">
       <div class="container">
         <h2 class="contacts-section__title section__title">Як нас <span class="brand">знайти</span></h2>
         <div class="contacts-section__container">
@@ -327,6 +336,9 @@
   </div>
   <script src="./js/modal.js"></script>
   <script src="./js/mobile-menu.js"></script>
+  <script src="./js/swiper-bundle.min.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+  <script src="./js/procedures-slider.js"></script>
 </body>
 
 </html>

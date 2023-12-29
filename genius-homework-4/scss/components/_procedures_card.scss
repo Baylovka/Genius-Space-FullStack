@@ -1,8 +1,10 @@
 .procedures-card {
-    flex-basis: calc((100% - 32px) / 3);
-    height: 456px;
+    height: 416px !important;
     border-radius: 4px 120px;
-    transition: scale .2s, box-shadow .2s;
+
+    @media screen and (min-width: $bp-mobile) {
+        height: 456px !important;
+    }
     
     &--bg-mask {
         background: url(../images/mask.jpg) no-repeat center;
@@ -17,14 +19,6 @@
     &--bg-cleaning {
         background: url(../images/cleaning.jpg) no-repeat center;
         background-size: cover;
-    }
-
-    &:hover {
-        scale: 1.05;
-        box-shadow:
-        1px 1px 2px black,
-        0 0 1em var(--color-primary-dark-blue),
-        0 0 0.2em var(--color-primary-blue);
     }
 
     &__gradient {
@@ -46,5 +40,4 @@
         box-sizing: content-box;
         padding: 0 22% 32px 0;
     }
-    
 }

@@ -7,28 +7,57 @@
     &__context {
         display: flex;
         flex-direction: column;
-        gap: 40px;
+        gap: 24px;
         max-width: 710px;
+
+        @media screen and (min-width: $bp-desktop) {
+            font-size: 22px;
+            gap: 40px;
+        }
     }
     
     &__title {
         text-align: start;
         max-width: 530px;
-        padding-top: 40px;
+        padding-top: 0;
+
+        @media screen and (min-width: $bp-tablet) {
+            padding-top: 40px;
+        }
     }
     
     &__text {
         display: flex;
         flex-direction: column;
-        gap: 40px;
+        gap: 16px;
         line-height: 1.72;
+        font-size: 18px;
+
+        @media screen and (min-width: $bp-desktop) {
+            font-size: 22px;
+            gap: 40px;
+        }
     }
     
     &__photos {
-        display: flex;
-        flex-direction: column;
-        gap: 40px;
-        flex-grow: 1;
+        display: none;
+        
+        @media screen and (min-width: $bp-tablet) {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            flex-grow: 1;
+        }
+    }
+
+    &__photo {
+        @media screen and (min-width: $bp-tablet) {
+            width: 224px;
+        }
+
+        @media screen and (min-width: $bp-desktop) {
+            width: auto;
+        }
     }
 
     &__photo-before {
@@ -38,10 +67,15 @@
 
         &::before,
         &::after {
-            content: "";
-            position: absolute;
-            animation-iteration-count: infinite;
-            animation-timing-function: linear;
+            display: none;
+
+            @media screen and (min-width: $bp-desktop) {
+                display: block;
+                content: "";
+                position: absolute;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
         }
 
         &::before {
@@ -71,18 +105,23 @@
         position: relative;
 
         &::before {
-            content: "";
-            position: absolute;
-            animation-iteration-count: infinite;
-            animation-timing-function: linear;
+            display: none;
 
-            background-image: url(../images/decor-star-large.png);
-            width: 56px;
-            height: 56px;
-            top: 0;
-            left: 130px;
-            animation-name: animation-star-large;
-            animation-duration: 2.5s;
+            @media screen and (min-width: $bp-desktop) {
+                display: block;
+                content: "";
+                position: absolute;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+    
+                background-image: url(../images/decor-star-large.png);
+                width: 56px;
+                height: 56px;
+                top: 0;
+                left: 70px;
+                animation-name: animation-star-large;
+                animation-duration: 2.5s;
+            }
         }
     }
 }
