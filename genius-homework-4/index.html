@@ -41,15 +41,13 @@
             </svg>
           </a>
         </div>
-
         <button type="button" class="header__burger menu-btn-open">
           <svg width="24px" height="24px">
             <use href="./images/icons.svg#icon-burger"></use>
           </svg>
         </button>
-
-
       </div>
+    </div>
   </header>
   <main>
     <section class="main-section">
@@ -89,10 +87,14 @@
           </div>
           <div class="about-section__photos">
             <div class="about-section__photo-before">
-              <img class="rounded about-section__photo" srcset="./images/women-before.jpg 1x, ./images/women-before@2x.jpg 2x" src="./images/women-before.jpg" alt="Вигляд жінки до">
+              <img class="rounded about-section__photo"
+                srcset="./images/women-before.jpg 1x, ./images/women-before@2x.jpg 2x" src="./images/women-before.jpg"
+                alt="Вигляд жінки до">
             </div>
             <div class="about-section__photo-after">
-              <img class="rounded about-section__photo" srcset="./images/women-after.jpg 1x, ./images/women-after@2x.jpg 2x" src="./images/women-after.jpg" alt="Вигляд жінки після">
+              <img class="rounded about-section__photo"
+                srcset="./images/women-after.jpg 1x, ./images/women-after@2x.jpg 2x" src="./images/women-after.jpg"
+                alt="Вигляд жінки після">
             </div>
           </div>
         </div>
@@ -173,11 +175,11 @@
         <div class="contacts-section__container">
           <iframe class="contacts-section__map"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.9325719461126!2d30.5181753!3d50.4423566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef8b5f6338d%3A0x25c7f06ad686451c!2z0LHRg9C7LiDQotCw0YDQsNGB0LAg0KjQtdCy0YfQtdC90LrQviwgNSwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1701539978346!5m2!1sru!2sua"
-            style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade">
+            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
           </iframe>
           <div class="contacts-section__form">
-            <p class="contacts-section__text">Запишіться <span class="brand">безкоштовно</span> та отримайте подарунок</p>
+            <p class="contacts-section__text">Запишіться <span class="brand">безкоштовно</span> та отримайте подарунок
+            </p>
             <form class="form" name="contact-form" autocomplete="off">
               <div class="form__field">
                 <label class="visually-hidden" for="user-name-lastname"></label>
@@ -229,7 +231,8 @@
             <li><a class="footer__link" href="tel:+380960000007">+ 38 (096) 000 00 07</a></li>
             <li><a class="footer__link" href="mailto:beautyzone@gmail.com">beautyzone@gmail.com</a></li>
             <li>
-              <a class="footer__link footer__link--min" href="https://maps.app.goo.gl/W6SMxQbyj6sZusVZ9" target="_blank">
+              <a class="footer__link footer__link--min" href="https://maps.app.goo.gl/W6SMxQbyj6sZusVZ9"
+                target="_blank">
                 Україна, м. Київ, <br>вул. Тараса Шевченка 5
               </a>
             </li>
@@ -307,20 +310,20 @@
       <p class="modal__text">Запишіться <span class="brand">безкоштовно</span> та отримайте подарунок</p>
       <form class="form" name="modal-form" autocomplete="off">
         <div class="form__field">
-          <label class="visually-hidden" for="user-name-lastname"></label>
-          <input class="form__input" type="text" id="user-name-lastname" name="user-name-lastname"
+          <label class="visually-hidden" for="modal-user-name-lastname"></label>
+          <input class="form__input" type="text" id="modal-user-name-lastname" name="modal-user-name-lastname"
             placeholder="Ваше ім'я та прізвище" required pattern="^[a-zA-Zа-яА-ЯЄєІіҐґ]+\s[a-zA-Zа-яА-ЯЄєІіҐґ]+$">
         </div>
 
         <div class="form__field">
-          <label class="visually-hidden" for="user-phone"></label>
-          <input class="form__input" type="tel" id="user-phone" name="user-phone" placeholder="Ваш номер телефону"
+          <label class="visually-hidden" for="modal-user-phone"></label>
+          <input class="form__input" type="tel" id="modal-user-phone" name="modal-user-phone" placeholder="Ваш номер телефону"
             required pattern="^\+[0-9]{12}">
         </div>
 
         <div class="form__field">
-          <label class="visually-hidden" for="user-email"></label>
-          <input class="form__input" type="email" id="user-email" name="user-email" placeholder="Ваша електронна пошта"
+          <label class="visually-hidden" for="modal-user-email"></label>
+          <input class="form__input" type="email" id="modal-user-email" name="modal-user-email" placeholder="Ваша електронна пошта"
             required>
         </div>
 
