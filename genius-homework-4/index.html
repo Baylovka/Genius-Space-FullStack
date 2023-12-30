@@ -7,8 +7,6 @@
   <title>Beauty Zone</title>
   <link rel="stylesheet" href="./css/styles.css">
   <link rel="stylesheet" href="./css/swiper-bundle.min.css">
-  
-  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
 </head>
 
 <body>
@@ -91,10 +89,10 @@
           </div>
           <div class="about-section__photos">
             <div class="about-section__photo-before">
-              <img class="rounded about-section__photo" src="./images/women-before.jpg" alt="Вигляд жінки до">
+              <img class="rounded about-section__photo" srcset="./images/women-before.jpg 1x, ./images/women-before@2x.jpg 2x" src="./images/women-before.jpg" alt="Вигляд жінки до">
             </div>
             <div class="about-section__photo-after">
-              <img class="rounded about-section__photo" src="./images/women-after.jpg" alt="Вигляд жінки після">
+              <img class="rounded about-section__photo" srcset="./images/women-after.jpg 1x, ./images/women-after@2x.jpg 2x" src="./images/women-after.jpg" alt="Вигляд жінки після">
             </div>
           </div>
         </div>
@@ -169,13 +167,13 @@
         </div>
       </div>
     </section>
-    <!-- <section class="contacts-section section" id="contacts-section">
+    <section class="contacts-section section" id="contacts-section">
       <div class="container">
         <h2 class="contacts-section__title section__title">Як нас <span class="brand">знайти</span></h2>
         <div class="contacts-section__container">
           <iframe class="contacts-section__map"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.9325719461126!2d30.5181753!3d50.4423566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef8b5f6338d%3A0x25c7f06ad686451c!2z0LHRg9C7LiDQotCw0YDQsNGB0LAg0KjQtdCy0YfQtdC90LrQviwgNSwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1701539978346!5m2!1sru!2sua"
-            width="600" height="493" style="border:0;" allowfullscreen="" loading="lazy"
+            style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade">
           </iframe>
           <div class="contacts-section__form">
@@ -208,9 +206,9 @@
           </div>
         </div>
       </div>
-    </section> -->
+    </section>
   </main>
-  <!-- <footer class="footer">
+  <footer class="footer">
     <div class="container">
       <div class="footer__container">
         <nav class="footer__nav">
@@ -231,24 +229,24 @@
             <li><a class="footer__link" href="tel:+380960000007">+ 38 (096) 000 00 07</a></li>
             <li><a class="footer__link" href="mailto:beautyzone@gmail.com">beautyzone@gmail.com</a></li>
             <li>
-              <a class="footer__link" href="https://maps.app.goo.gl/W6SMxQbyj6sZusVZ9" target="_blank">
-                Україна, м. Київ, вул. Тараса Шевченка 5
+              <a class="footer__link footer__link--min" href="https://maps.app.goo.gl/W6SMxQbyj6sZusVZ9" target="_blank">
+                Україна, м. Київ, <br>вул. Тараса Шевченка 5
               </a>
             </li>
             <li>
               <div class="footer__social">
                 <a href="">
-                  <svg class="footer__icon" height="42px" width="42px">
+                  <svg class="footer__icon">
                     <use href="./images/icons.svg#icon-phone"></use>
                   </svg>
                 </a>
                 <a href="">
-                  <svg class="footer__icon" height="42px" width="42px">
+                  <svg class="footer__icon">
                     <use href="./images/icons.svg#icon-facebook"></use>
                   </svg>
                 </a>
                 <a href="">
-                  <svg class="footer__icon" height="42px" width="42px">
+                  <svg class="footer__icon">
                     <use href="./images/icons.svg#icon-instagram"></use>
                   </svg>
                 </a>
@@ -262,7 +260,7 @@
         </address>
       </div>
     </div>
-  </footer> -->
+  </footer>
   <div class="mobile-menu">
     <div class="mobile-menu__container">
       <button class="mobile-menu__button menu-btn-close">
@@ -337,7 +335,6 @@
   <script src="./js/modal.js"></script>
   <script src="./js/mobile-menu.js"></script>
   <script src="./js/swiper-bundle.min.js"></script>
-  <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
   <script src="./js/procedures-slider.js"></script>
 </body>
 
